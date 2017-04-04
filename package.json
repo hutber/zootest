@@ -1,0 +1,32 @@
+{
+  "name": "zootest",
+  "version": "1.0.0",
+  "description": "For my test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiehutber/zootest.git"
+  },
+  "keywords": [
+    "zoo",
+    "test"
+  ],
+  "author": "jamie@hutber.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jamiehutber/zootest/issues"
+  },
+  "homepage": "https://github.com/jamiehutber/zootest#readme",
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "hutber-conventional-changelog": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/hutber-conventional-changelog"
+    }
+  }
+}
