@@ -5,3 +5,9 @@ $bgTop:                       #073ED9;
 $headerBgColour:              #0CACFE;
 $bgBottom:                    #02E9FB;
 $dataBg:                      #EFEFF4;
+
+// Widths
+$pad: 32px;
+
+// Media Quries
+$mobile-max: 500px;
