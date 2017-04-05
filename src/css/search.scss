@@ -1,0 +1,13 @@
+$searchWidth: 80px;
+.searchResults {
+  margin: ;
+}
+.searchBox {
+  input {
+    margin-right: 5px;
+    width: calc(100% - 90px);
+  }
+  button {
+    width: $searchWidth;
+  }
+}
