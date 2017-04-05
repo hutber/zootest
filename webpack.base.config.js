@@ -3,7 +3,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const {environment} = require('webpack-config');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -16,13 +15,6 @@ module.exports = {
   },
   module: {
     loaders: [
-      {
-        test: /dashjs\/dist\/.*/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]'
-        }
-      },
       {
         test: /\.js$/,
         exclude: /node_modules\/.*/,
@@ -58,12 +50,5 @@ module.exports = {
       { test: /\.[ot]tf$/, loader: 'url?limit=65000&mimetype=application/octet-stream&name=font/[name].[ext]' },
       { test: /\.eot$/, loader: 'url?limit=65000&mimetype=application/vnd.ms-fontobject&name=font/[name].[ext]' }
     ]
-  },
-  plugins: [
-    new ExtractTextPlugin({
-      filename:'bundle.css',
-      disable:false,
-      allChunks: true
-    })
-  ]
+  }
 };
