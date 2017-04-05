@@ -6,5 +6,6 @@ module.exports = {
     , require('postcss-simple-vars')
     , require('postcss-nested')
     , require('autoprefixer')
+	  , new ExtractTextPlugin('style.css')
   ]
 }

@@ -1,5 +1,5 @@
 import search from './templates/search';
-import './css/main.css';
+import './css/main.scss';
 
 const app = document.getElementById('zooApp');
 

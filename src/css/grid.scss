@@ -1,6 +1,6 @@
-@import './vars.css';
+@import 'vars';
 
-@media only screen and (width >= $mobile-max) {
+@media only screen and (min-width: $mobileMax) {
   .grid {
     margin: 0 0 $pad 0;
 
@@ -55,7 +55,7 @@
 }
 
 // Tablet
-@media screen and (width >= 500px) and (width <= 786px){
+@media screen and (min-width: 500px) and (max-width: 786px){
   .col-1-2 {
     width: 50%;
   }

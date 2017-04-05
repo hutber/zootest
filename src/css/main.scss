@@ -1,7 +1,7 @@
 /*Imports*/
-@import "vars.css";
-@import "./typography/index.css";
-@import "./form/index.css";
+@import "vars";
+@import "typography/index";
+@import "form/index";
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 }
 
 // Tablet
-@media screen and (width >= 500px) and (width <= 786px){
+@media screen and (min-width: 500px) and (max-width: 786px){
   body {
     margin: $pad;
     font-size: 14px;
