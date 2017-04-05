@@ -8,3 +8,19 @@ Simply run `npm install`
 * Navigate to `localhost:8080`
 * See the project.
 
+# Contributing
+We are using Commitizen for our commits.
+
+`npm install -g commitizen`
+
+Init commitizen configuration
+
+`commitizen init hutber-conventional-changelog --save-dev --save-exact`
+
+## Useage
+
+When making changes, add files then
+
+`git cz`
+
+
