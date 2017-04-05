@@ -29,7 +29,7 @@ module.exports = {
         use: ['babel-loader', 'svg-react-loader']
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           'style-loader',
           {
