@@ -15,6 +15,11 @@ module.exports = new Config().extend('./webpack.base.config.js').merge({
     host: '0.0.0.0',
     publicPath: '/dist/'
   },
+  resolve: {
+    alias: {
+      handlebars: 'handlebars/dist/handlebars.min.js'
+    }
+  },
   devtool: 'inline-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

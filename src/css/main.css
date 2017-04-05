@@ -1,0 +1,18 @@
+/*Imports*/
+@import "vars.css";
+@import "./typography/index.css";
+@import "./form/index.css";
+
+/*Body/Html*/
+html, body {
+  font-size:18px;
+  padding: 0;
+  margin: 16px;
+}
+
+@media (min-width:500px){
+  body {
+    margin: 32px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,7 @@
+button {
+  background: #DDD;
+  padding: 7px 15px;
+  cursor: pointer;
+  border: 1px solid #a9a9a9;
+  -webkit-appearance: none;
+}
