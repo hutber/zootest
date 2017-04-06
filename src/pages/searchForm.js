@@ -20,7 +20,9 @@ const updateSearchResults = function (properties){
 		});
 };
 
-const submitSearchForm = function (form, properties){
+const submitSearchForm = function (){
+	const properties = arguments[1];
+	const form = arguments[0];
 	const input = form.currentTarget.getElementsByClassName('searchText')[0];
 	while (properties.firstChild) { //restart properties
 		properties.removeChild(properties.firstChild);
