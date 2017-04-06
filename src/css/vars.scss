@@ -5,17 +5,14 @@ $defaultPopColour:            #ff5600;
 $bgColour:                    #DDD;
 
 // Widths
-$pad: 16px;
-
-// grid variables
-$grid-columns: 12;
-$grid-max-width: 65em;
+$phonepad: 16px;
+$tableypad: 24px;
+$desktoppad: 36px;
 
 
 // breakpoints
-$break-small: 425px;
-$break-large: 768px;
-$break-screen: 1024px;
+$break-small: 768px;
+$break-large: 1024px;
 
 %clearfix {
   *zoom: 1;

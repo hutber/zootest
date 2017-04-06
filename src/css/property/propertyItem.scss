@@ -1,8 +1,29 @@
 .propertyitem {
-  margin-bottom: $pad 0;
+  margin: $phonepad 0;
+  h3 {
+    margin-top: 0;
+  }
+  & > div {
+    @include susy-clearfix;
+    @include respond-to(desktop){
+      @include span(4 of 5 nest);
+    }
+  }
   & div > img {
-    @include respond-to(smallscreen) {
-      width: 100%;
+    width: 100%;
+    @include respond-to(tablet){
+      @include span(3 of 6 nest);
+    }
+    @include respond-to(desktop){
+      @include span(1 of 2 nest);
+    }
+  }
+  &-text {
+    @include respond-to(tablet){
+      @include span(3 of 6 last);
+    }
+    @include respond-to(desktop){
+      @include span(1 of 2);
     }
   }
   &-price {
@@ -10,16 +31,12 @@
     font-size: 1.6em;
     margin: 10px 0;
   }
-  $font-size: 16px;
-  $line-height: 1.4;
-  $lines-to-show: 6;
 
+  //Eclipse config
+  $lines-to-show: 6;
   &-info {
     display: -webkit-box;
-    height: $font-size*$line-height*$lines-to-show; //Stop the font cutting off at the bottom
     margin: 0 auto;
-    font-size: $font-size;
-    line-height: $line-height;
     -webkit-line-clamp: $lines-to-show;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -28,9 +45,25 @@
   aside {
     background: $bgColour;
     padding: 5px;
+    margin: $tableypad 0;
     font-size: 0.8rem;
-    & > div {
-      margin: 5px 0;
+    @include respond-to(tablet){
+      width: 100%;
+      @include susy-clearfix;
+    }
+    @include respond-to(desktop){
+      @include span(1 of 5 last);
+      margin: 0;
+    }
+    & > div  {
+      @include respond-to(tablet){
+        @include span(1 of 6);
+      }
+    }
+    img {
+      @include respond-to(tablet){
+        @include span(1 of 6 nest);
+      }
     }
   }
 }
