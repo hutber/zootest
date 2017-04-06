@@ -1,4 +1,3 @@
-import Backbone from '../../backbone';
 const handlebars = require('handlebars');
 
 const search =  handlebars.compile(`
