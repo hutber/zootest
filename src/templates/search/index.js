@@ -14,6 +14,7 @@ const search =  handlebars.compile(`
 		<button>Search</button>
 		<span class="searchError"></span>
 	</form>
+	<div class="properties"></div>
 `);
 
 export default search;
