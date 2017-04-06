@@ -1,0 +1,23 @@
+.loading {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(150, 150, 150, 0.25);
+  transition: opacity .3s ease-in;
+  visibility: hidden;
+  opacity: 0;
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    transform: translate(-50%, -50%);
+  }
+  &-on  {
+    visibility: inherit;
+    opacity: 1;
+  }
+}

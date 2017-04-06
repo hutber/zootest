@@ -11,3 +11,15 @@ $searchWidth: 80px;
     width: $searchWidth;
   }
 }
+.searchNoResults {
+  display: none;
+}
+
+.searchTitles.noResults {
+  .searchNoResults {
+    display: block;
+  }
+  & > h1 {
+    display: none;
+  }
+}
